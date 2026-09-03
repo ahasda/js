@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Software You Learn</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: Arial;
+        }
+
+        .section-title h4 {
+            color: #ff5a00;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #0a2540;
+        }
+
+        /* Team card */
+        .single-team {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Image container */
+        .member-image {
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        /* Fixed image size */
+        .member-image img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        /* Bottom title box */
+        .member-info {
+            background: #050a2c;
+            padding: 15px;
+        }
+
+        .member-info h6 {
+            color: white;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        /* carousel arrows */
+        .owl-nav {
+            position: absolute;
+            top: -70px;
+            right: 0;
+        }
+
+        .owl-nav button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid #ccc !important;
+            margin-left: 10px;
+            font-size: 22px !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <section class="team-section section-ptb">
+
+        <div class="container">
+
+            <div class="section-title mb-5">
+
+                <h4>Software You Learn</h4>
+                <h2>About your AI Powered Course</h2>
+
+            </div>
+
+
+            <div class="owl-carousel our-team-carousel">
+
+                <div class="single-team">
+                    <div class="member-image">
+                        <img src="software/Google_Ads_logo.png">
+                    </div>
+                    <div class="member-info">
+                        <h6>Google Ads</h6>
+                    </div>
+                </div>
+
+                <div class="single-team">
+                    <div class="member-image">
+                        <img src="software/google_analytics.png">
+                    </div>
+                    <div class="member-info">
+                        <h6>Google Analytics</h6>
+                    </div>
+                </div>
+
+                <div class="single-team">
+                    <div class="member-image">
+                        <img src="software/google-search-console.png">
+                    </div>
+                    <div class="member-info">
+                        <h6>Google Search Console</h6>
+                    </div>
+                </div>
+
+                <div class="single-team">
+                    <div class="member-image">
+                        <img src="software/4.png">
+                    </div>
+                    <div class="member-info">
+                        <h6>Keyword Research Tools</h6>
+                    </div>
+                </div>
+
+                <div class="single-team">
+                    <div class="member-image">
+                        <img src="software/4.png">
+                    </div>
+                    <div class="member-info">
+                        <h6>SEO Analysis Tools</h6>
+                    </div>
+                </div>
+
+                <div class="single-team">
+                    <div class="member-image">
+                        <img src="software/Canva.png">
+                    </div>
+                    <div class="member-info">
+                        <h6>Canva</h6>
+                    </div>
+                </div>
+
+                <div class="single-team">
+                    <div class="member-image">
+                        <img src="software/WordPress.png">
+                    </div>
+                    <div class="member-info">
+                        <h6>WordPress</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+
+        $('.our-team-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+
+    </script>
+
+
+</body>
+
+</html>

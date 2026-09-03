@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: green;
+   /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://i0.wp.com/picjumbo.com/wp-content/uploads/calming-nature-wallpaper-free-image.jpeg?w=600&quality=80'); */
+   /* background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/calming-nature-wallpaper-free-image.jpeg?w=600&quality=80'); */
+    background-size: cover;
+    padding: 50px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+     
+    /* background-attachment: scroll; */
+   
+}
+
+
+#hNew{
+    color: white !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.pNew{
+    color: rgb(51, 7, 36);
+    font-size: 18px;
+    word-spacing: 6px;
+    /* letter-spacing: 4px; */
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pNewdesign{
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.btn{
+    height: 50px;
+    width: 100px;
+    background: brown;
+    border: 2px solid aqua;
+    border-radius: 30px 10px 50px;
+}
+
+
+.container2{
+    background-color: antiquewhite;
+    height: 80vh;
+    padding-top: 200px;
+    display: flex;
+    gap: 50px;
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 8px 6px 20px 5px black;
+}
+
+/* .box{
+    background-color: aqua;
+    text-align: center;
+    height: 100px;
+    margin: auto;
+    width: 100px;
+    border: 1px solid black;
+}
+#box2{
+    border-radius: 20px;
+}
+#box3{
+    border-radius: 50%;
+}
+#box4{
+    border-radius: 20px 0px ;
+}
+#box5{
+    border-radius: 90px 0px 0px 0px;
+}
+#box6{
+    border-radius: 30px;
+}
+#box7{
+    border-radius: 90px 0px 90px 0px;
+}
+#box8{
+    border-radius: 40px 40px 0px 4px;
+} */
+
+

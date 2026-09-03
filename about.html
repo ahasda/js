@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      /* ================================
+            GRAPHIC DESIGN SECTION
+         ================================ */
+
+      .gd-after-12-section {
+         background: #f8f9fc;
+         font-family: "Inter", sans-serif;
+      }
+
+
+      /* SECTION HEADER */
+
+      .section-tag,
+      .small-label {
+         display: inline-block;
+         color: #5b45d9;
+         font-size: 13px;
+         font-weight: 700;
+         letter-spacing: 1.2px;
+      }
+
+      .section-title {
+         color: #181b2c;
+         font-size: 42px;
+         font-weight: 800;
+         line-height: 1.2;
+         margin-bottom: 18px;
+      }
+
+      .section-title span {
+         color: #5b45d9;
+      }
+
+      .section-desc {
+         color: #666b7a;
+         font-size: 17px;
+         line-height: 1.7;
+         max-width: 750px;
+         margin: auto;
+      }
+
+
+      /* ================================
+   ELIGIBILITY BOX
+================================ */
+
+      .eligibility-box {
+         background: #fff;
+         border: 1px solid #eee9ff;
+         border-radius: 22px;
+         padding: 35px;
+         box-shadow: 0 15px 45px rgba(32, 29, 46, 0.06);
+         position: relative;
+         overflow: hidden;
+      }
+
+      .eligibility-box::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 5px;
+         height: 100%;
+         background: #5b45d9;
+      }
+
+      .eligibility-icon {
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         background: #f1edff;
+         color: #5b45d9;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 27px;
+         margin: auto;
+      }
+
+      .eligibility-box h3 {
+         color: #191b2b;
+         font-size: 23px;
+         font-weight: 750;
+         margin-bottom: 12px;
+      }
+
+      .eligibility-box p {
+         color: #656a79;
+         line-height: 1.7;
+         margin-bottom: 18px;
+      }
+
+      .stream-list {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+         align-items: center;
+      }
+
+      .stream-list span {
+         background: #f5f5f8;
+         border: 1px solid #e8e8ed;
+         padding: 7px 15px;
+         border-radius: 30px;
+         font-size: 13px;
+         color: #333645;
+         font-weight: 600;
+      }
+
+      .stream-list strong {
+         color: #168342;
+         font-size: 14px;
+         margin-left: 5px;
+      }
+
+      .stream-list strong i {
+         margin-right: 5px;
+      }
+
+
+      /* ================================
+   COMPARISON HEADING
+================================ */
+
+      .comparison-heading h3 {
+         color: #181b2c;
+         font-size: 29px;
+         font-weight: 800;
+         margin-top: 10px;
+      }
+
+      .comparison-heading h3 span {
+         color: #5b45d9;
+      }
+
+
+      /* ================================
+   COMPARISON TABLE
+================================ */
+
+      .comparison-wrapper {
+         background: #fff;
+         border-radius: 20px;
+         border: 1px solid #e8e8ed;
+         overflow: hidden;
+         box-shadow: 0 15px 45px rgba(32, 29, 46, 0.06);
+      }
+
+      .comparison-table {
+         width: 100%;
+         border-collapse: collapse;
+         margin: 0;
+      }
+
+      .comparison-table thead {
+         background: #f5f3ff;
+      }
+
+      .comparison-table th {
+         color: #5141b8;
+         font-size: 14px;
+         font-weight: 750;
+         padding: 20px 25px;
+         text-align: left;
+         white-space: nowrap;
+      }
+
+      .comparison-table td {
+         padding: 22px 25px;
+         color: #555a69;
+         font-size: 14px;
+         border-top: 1px solid #eeeeF2;
+         vertical-align: middle;
+      }
+
+      .comparison-table tbody tr {
+         transition: 0.25s ease;
+      }
+
+      .comparison-table tbody tr:hover {
+         background: #fafaff;
+      }
+
+
+      /* FEATURED DIPLOMA */
+
+      .comparison-table .featured-row {
+         background: #fbfaff;
+         position: relative;
+      }
+
+      .comparison-table .featured-row td {
+         border-top: 1px solid #e3dcff;
+         border-bottom: 1px solid #e3dcff;
+      }
+
+
+      /* COURSE NAME */
+
+      .course-name {
+         display: flex;
+         align-items: center;
+         gap: 14px;
+      }
+
+      .course-name strong {
+         color: #202232;
+         font-size: 15px;
+      }
+
+      .course-icon {
+         width: 46px;
+         height: 46px;
+         min-width: 46px;
+         border-radius: 13px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 20px;
+      }
+
+      .course-icon.certificate {
+         background: #fff4d8;
+         color: #d49400;
+      }
+
+      .course-icon.diploma {
+         background: #eeeaff;
+         color: #5b45d9;
+      }
+
+      .course-icon.degree {
+         background: #e7f2ff;
+         color: #3478c5;
+      }
+
+
+      /* BADGE */
+
+      .popular-badge {
+         display: inline-block;
+         background: #5b45d9;
+         color: #fff;
+         font-size: 10px;
+         padding: 4px 8px;
+         border-radius: 20px;
+         margin-left: 6px;
+         vertical-align: middle;
+         text-transform: uppercase;
+         letter-spacing: .4px;
+      }
+
+
+      /* STATUS */
+
+      .available {
+         color: #198754;
+         font-weight: 650;
+      }
+
+      .available i {
+         margin-right: 5px;
+      }
+
+      .not-available {
+         color: #d94848;
+         font-weight: 650;
+      }
+
+      .not-available i {
+         margin-right: 5px;
+      }
+
+      .duration {
+         color: #292c3b;
+         font-weight: 600;
+      }
+
+      .comparison-table small {
+         color: #858998;
+         font-size: 12px;
+      }
+
+
+      /* ================================
+   CAREER HIGHLIGHT
+================================ */
+
+      .career-highlight {
+         display: flex;
+         align-items: center;
+         gap: 25px;
+         padding: 30px 35px;
+         border-radius: 22px;
+         background: linear-gradient(135deg,
+               #f0edff,
+               #faf8ff);
+         border: 1px solid #e4ddff;
+      }
+
+      .career-icon {
+         width: 65px;
+         height: 65px;
+         min-width: 65px;
+         border-radius: 50%;
+         background: #fff;
+         color: #5b45d9;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 27px;
+         box-shadow: 0 8px 25px rgba(91, 69, 217, 0.12);
+      }
+
+      .career-content h3 {
+         color: #1c1e2d;
+         font-size: 22px;
+         font-weight: 750;
+         margin-bottom: 8px;
+      }
+
+      .career-content p {
+         color: #656a79;
+         line-height: 1.7;
+         margin-bottom: 15px;
+      }
+
+      .career-content strong {
+         color: #4f3cc2;
+      }
+
+      .career-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 9px;
+         padding: 11px 20px;
+         border-radius: 8px;
+         background: #5b45d9;
+         color: #fff;
+         text-decoration: none;
+         font-size: 14px;
+         font-weight: 650;
+         transition: .3s ease;
+      }
+
+      .career-btn:hover {
+         background: #4632b7;
+         color: #fff;
+         transform: translateY(-2px);
+      }
+
+
+      /* ================================
+   RESPONSIVE
+================================ */
+
+      @media (max-width: 991px) {
+
+         .section-title {
+            font-size: 34px;
+         }
+
+         .eligibility-icon {
+            margin-bottom: 20px;
+         }
+
+         .eligibility-box {
+            padding: 28px;
+         }
+
+         .comparison-table th,
+         .comparison-table td {
+            padding: 18px 15px;
+         }
+
+      }
+
+
+      @media (max-width: 767px) {
+
+         .gd-after-12-section {
+            padding: 50px 0 !important;
+         }
+
+         .section-title {
+            font-size: 29px;
+         }
+
+         .section-desc {
+            font-size: 15px;
+         }
+
+         .eligibility-box {
+            padding: 25px 20px;
+         }
+
+         .eligibility-box h3 {
+            font-size: 20px;
+         }
+
+         .stream-list {
+            gap: 7px;
+         }
+
+         .comparison-heading h3 {
+            font-size: 23px;
+         }
+
+         /*
+       Mobile table scroll
+    */
+         .comparison-wrapper {
+            overflow-x: auto;
+         }
+
+         .comparison-table {
+            min-width: 750px;
+         }
+
+         .career-highlight {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 25px;
+         }
+
+         .career-icon {
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+         }
+
+      }
+
+
+      @media (max-width: 480px) {
+
+         .section-title {
+            font-size: 26px;
+         }
+
+         .section-desc {
+            font-size: 14px;
+         }
+
+         .eligibility-box {
+            border-radius: 15px;
+         }
+
+         .career-highlight {
+            border-radius: 15px;
+         }
+
+         .career-content h3 {
+            font-size: 19px;
+         }
+
+         .career-content p {
+            font-size: 14px;
+         }
+
+         .career-btn {
+            width: 100%;
+            justify-content: center;
+         }
+
+      }
+   </style>
+</head>
+
+<body>
+   <h1 id="hNew">This is the Demo Class of Developmant</h1>
+   <p id="pNew">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facere ut error doloremque porro
+      recusandae explicabo sed ipsum et ab!</p>
+   <button onclick="ChangeText()">ChangeName</button>
+   <button onclick="ChangeColor()">ChangeColor</button>
+
+
+
+   <!-- Graphic Design After 12th Section -->
+   <section class="gd-after-12-section py-5">
+      <div class="container">
+
+         <!-- SECTION HEADER -->
+         <div class="row justify-content-center mb-5">
+            <div class="col-lg-9 text-center">
+               <span class="section-tag">GRAPHIC DESIGN CAREER</span>
+
+               <h2 class="section-title mt-3">
+                  Graphic Design Courses After 12th
+                  <span>— Eligibility & Options</span>
+               </h2>
+
+               <p class="section-desc">
+                  Thinking about a career in graphic design after 12th?
+                  Here's what you need to know about eligibility, course options,
+                  duration and career-focused programs.
+               </p>
+            </div>
+         </div>
+
+
+         <!-- ELIGIBILITY BOX -->
+         <div class="eligibility-box mb-5">
+            <div class="row align-items-center">
+
+               <div class="col-lg-1 col-md-2 text-center">
+                  <div class="eligibility-icon">
+                     <i class="bi bi-patch-question-fill"></i>
+                  </div>
+               </div>
+
+               <div class="col-lg-11 col-md-10">
+                  <h3>
+                     Can I Join Graphic Design After 12th From Any Stream?
+                  </h3>
+
+                  <p>
+                     Yes. Cinemac's Graphic Design course after 12th does not
+                     require an entrance exam. If you've completed your 10+2
+                     from a recognized board, you can apply directly.
+                  </p>
+
+                  <div class="stream-list">
+                     <span>Science</span>
+                     <span>Commerce</span>
+                     <span>Arts</span>
+
+                     <strong>
+                        <i class="bi bi-check-circle-fill"></i>
+                        No Entrance Exam
+                     </strong>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+
+         <!-- COMPARISON HEADING -->
+         <div class="comparison-heading text-center mb-4">
+
+            <span class="small-label">COMPARE YOUR OPTIONS</span>
+
+            <h3>
+               Diploma vs Degree vs Certificate
+               <span>— Which One After 12th?</span>
+            </h3>
+
+         </div>
+
+
+         <!-- COMPARISON TABLE -->
+         <div class="comparison-wrapper">
+
+            <div class="table-responsive">
+
+               <table class="comparison-table">
+
+                  <thead>
+                     <tr>
+                        <th>Course Type</th>
+                        <th>Duration</th>
+                        <th>Best For</th>
+                        <th>At Cinemac</th>
+                     </tr>
+                  </thead>
+
+                  <tbody>
+
+                     <!-- CERTIFICATE -->
+                     <tr>
+                        <td>
+                           <div class="course-name">
+                              <div class="course-icon certificate">
+                                 <i class="bi bi-award"></i>
+                              </div>
+
+                              <div>
+                                 <strong>Certificate Course</strong>
+                              </div>
+                           </div>
+                        </td>
+
+                        <td>
+                           <span class="duration">2–3 Months</span>
+                        </td>
+
+                        <td>
+                           Quick skill add-on
+                        </td>
+
+                        <td>
+                           <span class="available">
+                              <i class="bi bi-check-circle-fill"></i>
+                              Available
+                           </span>
+                        </td>
+                     </tr>
+
+
+                     <!-- DIPLOMA -->
+                     <tr class="featured-row">
+
+                        <td>
+                           <div class="course-name">
+
+                              <div class="course-icon diploma">
+                                 <i class="bi bi-file-earmark-text"></i>
+                              </div>
+
+                              <div>
+                                 <strong>Graphic Design Diploma</strong>
+
+                                 <span class="popular-badge">
+                                    Flagship
+                                 </span>
+                              </div>
+
+                           </div>
+                        </td>
+
+                        <td>
+                           <span class="duration">
+                              <strong>6 Months</strong>
+                           </span>
+                        </td>
+
+                        <td>
+                           <strong>Job-ready skills</strong>
+                           <br>
+                           <small>No entrance exam</small>
+                        </td>
+
+                        <td>
+                           <span class="available">
+                              <i class="bi bi-check-circle-fill"></i>
+                              Our Flagship Course
+                           </span>
+                        </td>
+
+                     </tr>
+
+
+                     <!-- DEGREE -->
+                     <tr>
+
+                        <td>
+                           <div class="course-name">
+
+                              <div class="course-icon degree">
+                                 <i class="bi bi-mortarboard"></i>
+                              </div>
+
+                              <div>
+                                 <strong>B.Des Degree</strong>
+                              </div>
+
+                           </div>
+                        </td>
+
+                        <td>
+                           <span class="duration">
+                              3–4 Years
+                           </span>
+                        </td>
+
+                        <td>
+                           Long-term degree
+                           <br>
+                           <small>Entrance exams may be required</small>
+                        </td>
+
+                        <td>
+                           <span class="not-available">
+                              <i class="bi bi-x-circle-fill"></i>
+                              Not Offered
+                           </span>
+                        </td>
+
+                     </tr>
+
+                  </tbody>
+
+               </table>
+
+            </div>
+
+         </div>
+
+
+         <!-- CAREER MESSAGE -->
+         <div class="career-highlight mt-5">
+
+            <div class="career-icon">
+               <i class="bi bi-rocket-takeoff-fill"></i>
+            </div>
+
+            <div class="career-content">
+
+               <h3>
+                  Want to Start Your Design Career Faster?
+               </h3>
+
+               <p>
+                  Instead of spending 3–4 years and lakhs on a traditional
+                  design degree, our <strong>6-month industry-focused
+                     diploma</strong> is designed to help you build a strong
+                  portfolio and become <strong>job-ready faster.</strong>
+               </p>
+
+               <a href="#" class="career-btn">
+                  Explore Graphic Design Course
+                  <i class="bi bi-arrow-right"></i>
+               </a>
+
+            </div>
+
+         </div>
+
+      </div>
+   </section>
+</body>
+
+</html>
+
+<script>
+   function ChangeText() {
+      document.getElementById("hNew").innerHTML = "This is Demo Class of JavaScript";
+   }
+
+   function ChangeColor() {
+      document.getElementById("pNew").style.color = "red";
+   }
+</script>
